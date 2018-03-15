@@ -1,0 +1,8 @@
+rootProject.name = 'cqrses'
+
+include 'core'
+include 'vertx'
+//include 'kafka'
+include 'vertx-kafka'
+
+rootProject.children.each { project -> project.buildFileName = "${project.name}.gradle" }

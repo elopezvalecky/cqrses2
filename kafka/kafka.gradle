@@ -1,0 +1,11 @@
+dependencies {
+  compile project(':vertx')
+  compile 'org.apache.kafka:kafka-clients:0.10.2.0'
+  compile 'org.apache.kafka:kafka-streams:0.10.2.0'
+  compileOnly "io.vertx:vertx-core:${vertxVersion}"
+  compileOnly "io.vertx:vertx-service-proxy:${vertxVersion}:processor"
+  testCompile 'nl.kii.kafka:kafka-test:0.1.0'
+  testCompile 'org.apache.commons:commons-lang3:3.4'
+  testCompileOnly "io.vertx:vertx-unit:${vertxVersion}"
+  testCompileOnly "io.vertx:vertx-hazelcast:${vertxVersion}"
+}

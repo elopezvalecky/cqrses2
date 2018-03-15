@@ -1,0 +1,5 @@
+dependencies {
+  compile project(':core')
+  compileOnly "io.vertx:vertx-core:${vertxVersion}"
+  testCompileOnly "io.vertx:vertx-unit:${vertxVersion}"    
+}
